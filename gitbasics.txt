@@ -1,0 +1,51 @@
+Command line instructions 
+Git global setup
+git config --global user.name "FerreiraP18"
+git config --global user.email "pedro.ferreira12@vodafone.com"
+
+
+
+Create a new repository
+git clone https://git.srv.vodafone.com/ferreirap18/helloworld.git
+cd helloworld
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+
+
+Existing folder
+cd existing_folder
+git init
+git remote add origin https://git.srv.vodafone.com/ferreirap18/helloworld.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+
+Existing Git repository
+cd existing_repo
+git remote add origin https://git.srv.vodafone.com/ferreirap18/helloworld.git
+git push -u origin --all
+git push -u origin --tags
+
+Create Branch
+git checkout -b newbranch
+touch newcode.txt
+git add newcode.txt
+git commit -m "adicionado 'novo codigo'"
+git push origin newbranch
+git checkout master
+git merge newbranch
+git push
+
+Delete branch
+git branch -d newbranch
+
+
+Update local repository
+git fetch IoT
+git merge IoT/master
+
+
